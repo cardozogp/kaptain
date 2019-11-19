@@ -1,0 +1,13 @@
+language: cpp
+os:
+  - linux
+compiler:
+  - gcc
+  - g++
+before_script:
+  - qmake kaptain.pro
+script:
+  - make
+
+notifications:
+email: false
