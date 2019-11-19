@@ -4,6 +4,8 @@ os:
 compiler:
   - gcc
   - g++
+before_install:
+  - sudo apt-get install libc6 libgcc1 libqt4-qt3support libqtcore4 libqtgui4 libstdc++6
 before_script:
   - qmake kaptain.pro
 script:
